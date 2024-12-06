@@ -23,8 +23,8 @@ export async function generateMetadata({
   });
   return {
     title: {
-      template: "%s | Furkan Cengiz",
-      default: "Furkan Cengiz",
+      template: "%s | Guelcan Kamat",
+      default: "Guelcan Kamat",
     },
     description: t("description"),
     robots: {
@@ -68,13 +68,14 @@ export async function generateMetadata({
     ],
     openGraph: {
       type: "website",
-      url: locale === "en" ? "/" : "/tr",
-      title: "Furkan Cengiz",
+      url: locale === "en" ? "/" : locale === "de" ? "/de" : "/tr",
+
+      title: "Guelcan Kamat",
       description: t("description"),
     },
   };
 }
-const locales = ["en", "tr"];
+const locales = ["en", "de", "tr"];
 
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));

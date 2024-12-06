@@ -6,7 +6,7 @@ export default function Footer() {
     <footer className="w-full h-20 p-2 z-10 flex gap-4 md:gap-8 justify-center items-center bg-background/60 backdrop-blur-xs shadow-foreground shadow-sm transition-shadow-bg duration-300">
       <Link
         target="_blank"
-        href={"https://www.linkedin.com/in/4furkancengiz4/"}
+        href={"https://www.linkedin.com/in/g%C3%BClcan-kamat//"}
         className="hover:bg-gray-100 dark:hover:bg-black rounded-full p-4"
       >
         <Linkedin aria-label="LinkedIn Icon" />
@@ -23,12 +23,12 @@ export default function Footer() {
       <Link
         className="hover:bg-gray-100 dark:hover:bg-black rounded-full p-4"
         target="_blank"
-        href={"https://github.com/4furki4"}
+        href={"https://github.com/Gulcan82"}
       >
         <Github aria-label="GitHub Icon" />
       </Link>
       <Link
-        href="mailto:muhammedcengiz1@gmail.com"
+        href="mailto:gulcankamat@gmail.com"
         className="hover:bg-gray-100 dark:hover:bg-black rounded-full p-4"
       >
         <Mail aria-label="Mail Icon" />

@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "description": "Furkan Cengiz's personal website and portfolio"
+    "description": "Guelcan Kamat's personal website and portfolio"
   },
   "Navbar": {
     "home": "Home",
@@ -11,7 +11,7 @@
     "particles-enabled": "Particles Enabled"
   },
   "Home": {
-    "title": "Hello World, It's Furkan!",
+    "title": "Hello World, It's Gülcan!",
     "subtitle": "I'm a Full Stack Web Developer \\(o_o)/",
     "projects": "See my projects"
   },
@@ -19,7 +19,7 @@
     "title": "Project Previews",
     "metadata": {
       "title": "Project Previews",
-      "description": "Furkan Cengiz's project previews"
+      "description": "Gülcan Kamat's project previews"
     }
   },
   "Project": {

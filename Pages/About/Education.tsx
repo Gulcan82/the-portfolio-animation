@@ -15,12 +15,16 @@ import { SchoolIcon } from "lucide-react";
 type Education = {
   title: {
     en: string;
+    de: string;
     tr: string;
+    
   };
   place: string;
   description: {
     en: string;
+    de: string;
     tr: string;
+    
   };
   yearStart: Date;
   yearEnd?: Date;
@@ -51,12 +55,16 @@ export default function Education({
     {
       title: {
         en: "Frontend Web Development BootCamp",
+        de: "Frontend Webentwicklungs-BootCamp",
         tr: "Frontend Web Development BootCamp",
+      
       },
       place: "Recoded",
       description: {
         en: "I learned how to collaborate with teammates, provide feedback, manage time, and more. Furthermore, I honed my self-taught skills since our teachers encouraged us to self-teach.",
+        de: "Ich habe gelernt, wie man im Team zusammenarbeitet, Feedback gibt, Zeitmanagement betreibt und mehr. Außerdem habe ich meine autodidaktischen Fähigkeiten verbessert, da unsere Lehrer uns ermutigten, selbst zu lernen.",
         tr: "Takım çalışmasını, geri bildirim sağlamayı, zaman yönetimini ve daha fazlasını öğrendim. Ayrıca, öğretmenlerimiz bizi kendi kendimize öğrenmeye teşvik ettikleri için kendi kendime öğrendiğim becerilerimi geliştirdim.",
+        
       },
       yearStart: new Date(2023, 2, 5),
       yearEnd: new Date(2023, 8, 5),
@@ -64,12 +72,16 @@ export default function Education({
     {
       title: {
         en: "Industrial Engineering",
+        de: "Wirtschaftsingenieurwesen",
         tr: "Endüstri Mühendisliği",
+        
       },
       place: "Abdullah Gul University",
       description: {
-        en: "Completed the prep school and left the university at the end of the first year.",
+        en: "Completed the prep school and left the university at the end of the first year.", 
+        de: "Ich habe die Vorbereitungsschule abgeschlossen und die Universität am Ende des ersten Jahres verlassen.",
         tr: "Hazırlık okulunu tamamladım ve birinci sınıfın sonunda üniversiteden ayrıldım.",
+       
       },
       yearStart: new Date(2021, 9, 5),
       yearEnd: new Date(2022, 6, 15),
@@ -92,12 +104,12 @@ export default function Education({
           >
             <Card className="backdrop-blur-xs bg-opacity-60 dark:bg-opacity-60 flex flex-col">
               <CardHeader>
-                <CardTitle>{education.title[locale as "en" | "tr"]}</CardTitle>
+                <CardTitle>{education.title[locale as "en" | "de" | "tr"]}</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="font-bold fs-300">{education.place}</p>
                 <p className="fs-300">
-                  {education.description[locale as "en" | "tr"]}
+                  {education.description[locale as "en" | "de" | "tr"]}
                 </p>
               </CardContent>
               <CardFooter className="mt-auto">

@@ -13,14 +13,15 @@ export async function generateMetadata({
     openGraph: {
       type: "website",
       locale: locale,
-      url: locale === "en" ? "/about" : "/tr/hakkimda",
-      title: `${t("title")} | Furkan Cengiz`,
+      url: locale === "en" ? "/about" : locale === "de" ? "/de/ueber-mich" : "/tr/hakkimda",
+      title: `${t("title")} | Guelcan Kamat`,
       description: t("description"),
     },
     alternates: {
       canonical: "/about",
       languages: {
         en: "/about",
+        de: "/de/uebermich",
         tr: "/tr/hakkimda",
       },
     },

@@ -160,11 +160,12 @@ export default function Navbar({
                         // route, we can skip runtime checks.
                         params: params as any,
                       },
-                      { locale: locale === "en" ? "tr" : "en" }
+                      { locale: locale === "en" ? "de" : "tr" }
                     );
                   }}
                 >
-                  {locale === "en" ? "Türkçe" : "English"}
+                  {locale === "en" ? "Deutsch" : locale === "de" ? "English" : "Türkisch"}
+
                 </DropdownItem>
               </DropdownMenu>
             </Dropdown>

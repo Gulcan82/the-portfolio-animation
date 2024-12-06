@@ -3,6 +3,7 @@ import projectsData from "@/db/static/projects";
 import ProjectCards from "@/Pages/Projects/Cards/ProjectsCard";
 import { getBase64 } from "@/lib/getBase64ImageUrl";
 import { getTranslations, unstable_setRequestLocale } from "next-intl/server";
+
 export async function generateMetadata({
   params: { locale },
 }: {
@@ -18,20 +19,23 @@ export async function generateMetadata({
     openGraph: {
       type: "website",
       locale: locale,
-      url: locale === "en" ? "/en/projects" : "/tr/projeler",
-      title: `${t("title")} | Furkan Cengiz`,
+      url: locale === "en" ? "/en/projects" : locale === "de" ? "/de/projekte" : "/tr/projeler",
+      title: `${t("title")} | Guelcan Kamat`,
       description: t("description"),
     },
     alternates: {
       canonical: "/projects",
       languages: {
         en: "/projects",
+        de: "/projekte",
         tr: "/tr/projeler",
       },
     },
   };
 }
-const images = projectsData.map((project) => project.images[0].src);
+
+const images = projectsData.map((project) => project.images[0]?.src);
+
 export default async function Projects({
   params: { locale },
 }: {
@@ -43,11 +47,11 @@ export default async function Projects({
     images.map((image) => getBase64(image))
   );
   const projectPreviewData: ProjectPreview[] = projectsData.map((project) => ({
-    title: project.title[locale as "en" | "tr"],
-    src: project.images[0].src,
-    alt: project.images[0].alt,
+    title: project.title[locale as keyof typeof project.title] || project.title.en,
+    src: project.images[0]?.src,
+    alt: project.images[0]?.alt,
     endpoint: project.endpoint,
-    description: project.description[locale as "en" | "tr"],
+    description: project.description[locale as keyof typeof project.description] || project.description.en,
   }));
 
   return (

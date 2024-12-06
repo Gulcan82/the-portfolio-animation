@@ -1,0 +1,82 @@
+{
+    "metadata": {
+      "description": "Furkan Cengizs persönliche Website und Portfolio"
+    },
+    "Navbar": {
+      "home": "Startseite",
+      "projects": "Projekte",
+      "about": "Über mich",
+      "guestbook": "Gästebuch",
+      "particles-disabled": "Partikel Deaktiviert",
+      "particles-enabled": "Partikel Aktiviert"
+    },
+    "Home": {
+      "title": "Hallo Welt, hier ist Furkan!",
+      "subtitle": "Ich bin ein Full Stack Webentwickler \\(o_o)/",
+      "projects": "Sieh dir meine Projekte an"
+    },
+    "Projects": {
+      "title": "Projektübersichten",
+      "metadata": {
+        "title": "Projektübersichten",
+        "description": "Projektübersichten von Furkan Cengiz"
+      }
+    },
+    "Project": {
+      "repo-link": {
+        "visit": "Quellcode",
+        "contribute": "Zu diesem Projekt beitragen"
+      },
+      "live-link": "Live-Demo",
+      "tech-stack": "Technologie-Stack",
+      "contributors": "Mitwirkende",
+      "status": {
+        "completed": "Abgeschlossen",
+        "in-progress": "In Bearbeitung",
+        "planned": "Geplant"
+      }
+    },
+    "NotFoundPage": {
+      "title": "Seite Nicht Gefunden",
+      "link": "Zur Startseite gehen"
+    },
+    "ProjectNotFoundPage": {
+      "title": "Projekt Nicht Gefunden",
+      "link": "Zur Projektseite gehen"
+    },
+    "About": {
+      "metadata": {
+        "title": "Über mich",
+        "description": "Über mich Seite mit Kontaktinformationen und einer kurzen Biografie."
+      },
+      "GuestBook": {
+        "id": "guestbook",
+        "title": "Gästebuch",
+        "email": "Keine Sorge, ich werde deine E-Mail mit niemandem teilen.",
+        "signout": "Abmelden",
+        "googleSignin": "Mit Google anmelden",
+        "githubSignin": "Mit GitHub anmelden",
+        "signing": "Anmelden...",
+        "sign": "Eintragen",
+        "placeholder": "Hinterlasse eine Nachricht..."
+      },
+      "adventure": {
+        "title": "Mein Abenteuer",
+        "p1": "Um dir einen kurzen Hintergrund zu geben: Ich habe ursprünglich Wirtschaftsingenieurwesen an der AGU studiert, aber meine Leidenschaft für Softwareentwicklung hat mich dazu gebracht, stattdessen Spiele zu entwickeln. Ich habe mich dann entschieden, mich zunächst auf Backend-Entwicklung zu konzentrieren und später auch Frontend-Entwicklung zu meinen Fähigkeiten hinzuzufügen.",
+        "p2": "Nachdem ich etwas Erfahrung mit Unity gesammelt hatte, um Spiele zu entwickeln, entschied ich mich, .NET zu lernen. Der Grund, warum ich zur Webentwicklung wechselte, war, ein modernes türkisches Online-Wörterbuch von Grund auf zu erstellen. Das offizielle Wörterbuch hat viele Funktionen, die fehlen, und ich bin ein Fan von türkischen Wörtern und ihren Wurzeln. Anfangs entwickelte ich Multi-Page-Anwendungen, fand das jedoch unbefriedigend. Dann entdeckte ich .NET APIs und war begeistert von der Einfachheit, die benötigten Daten zu senden und sie nach Belieben zu verwenden. Später habe ich mich mit der clientseitigen Entwicklung beschäftigt und HTML, CSS und JavaScript gelernt. Ehrlich gesagt hatte ich anfangs Schwierigkeiten, da mir die richtigen Ressourcen fehlten. Glücklicherweise wurde ich in das Frontend-Webentwicklungs-BootCamp von Recoded aufgenommen.",
+        "p3": "Während des Bootcamps habe ich nicht nur meine Frontend-Fähigkeiten verbessert, sondern auch gelernt, wie man im Team zusammenarbeitet, Feedback gibt, Zeit managt und vieles mehr. Außerdem habe ich meine autodidaktischen Fähigkeiten weiterentwickelt, da unsere Lehrer uns dazu ermutigten, uns selbst weiterzubilden.",
+        "p4": "Auf diesem Abenteuer habe ich Fehler gemacht und werde es auch weiterhin tun. Ich habe gelernt, dass Fehler machen nichts ist, wovor ich Angst haben sollte. Wovor ich wirklich Angst haben sollte, ist, Angst vor Fehlern zu haben, denn das bedeutet nur, dass ich vielleicht nicht mag, was ich tue."
+      },
+      "education": {
+        "title": "Meine Ausbildung"
+      },
+      "github-contributions": {
+        "title": "Meine GitHub-Beiträge"
+      },
+      "taken-courses": {
+        "title": "Absolvierte Kurse",
+        "course-page": "Kursseite"
+      }
+    }
+  }
+  
